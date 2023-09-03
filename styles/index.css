@@ -23,7 +23,7 @@ header {
     align-items: center;
     position: absolute;
     top: 5px;
-    z-index: 10;
+    z-index: 20;
    
 }
 
@@ -54,18 +54,20 @@ header {
     padding: 0px 100px;
     border-radius: 5px;
     box-shadow: 1px 4px 15px -4px rgba(125,121,125,0.99);
+    z-index: 20;
 }
 
-.second-nav div {
-    width: 90%;
+.secondnav-container {
     display: flex;
-    gap: 80px;
     justify-content: flex-start;
     align-items: center;
+    width: 90%;
+    gap: 80px;
 }
 
 .second-nav figure {
-    width: 5%;
+    width: 7%;
+    margin: 0px;
 }
 
 .second-nav figure img{
@@ -75,20 +77,43 @@ header {
 
 .second-navLink {
     /* width: 60%; */
+    height: 10vh;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    gap: 50px;
+    align-items: center;
+    gap: 30px;
 }
 
-.second-navLink li {
-    list-style: none;
-}
-
-.second-navLink li a {
+.second-navLink a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 17px;
+    height: 10vh;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 100px; */
+    /* background-color: green; */
+}
+
+.second-navLink a:hover {
+    border-bottom: 3px solid green;
+}
+
+
+.section-1 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-height {
+    width: 100vw;
+    height: 100vh;
 }
 
 .pix {
@@ -115,7 +140,7 @@ header {
     text-align: left;
     position: absolute;
     bottom:100px;
-    left: 5px;
+    left: 45px;
     
 }
 
@@ -124,3 +149,104 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
 }
+
+.drop {
+   display: flex;
+    position: relative;
+    height: 100%;
+  }
+
+   .dropdown {
+    height: 85vh;
+    width: 95vw;
+    position: absolute;
+    top: 80px;
+    left: -260px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 100px 50px;
+    display: none;
+  }
+
+  .dropdown-links {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .dropdown-links a {
+    text-decoration: none;
+    display: inline-block;
+    max-width: 250px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .dropdown-links a:hover {
+    background-color: rgb(255, 203, 5);
+    border: none;
+    font-weight: bold;
+  }
+
+  .dropdown figure {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .dropdown figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  
+  .drop:hover .dropdown{
+    display: flex;
+  }
+
+  .devices {
+    left: -349px;
+  }
+
+  .voices {
+    left:-452px;
+  }
+
+  .sim {
+    left: -550px;
+  }
+
+  .support {
+    left:-700px;
+  }
+
+  .get-started {
+    height: 10vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, rgba(0,73,122,0.6) 26.48%, rgba(0,51,102,0.6) 73.52%);
+    position: absolute;
+    bottom: 30px;
+    border-radius: 4px;
+  }
+
+  .get-started button {
+    padding: 10px 60px;
+    border:2px solid black;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, rgba(117, 119, 121, 0.6) 26.48%, rgba(0,51,102,0.6) 73.52%);
+  }
